@@ -1,14 +1,29 @@
 
 lang: en
-
-title: rockyyh
-
-description: Welcome to my blog!
+title: Yinghao Yang
+email: yangyinghao@berkeley.edu
+favicon: true
+color-scheme: auto
+description: Undergraduate @ Westlake University
+logo: /assets/img/me.jpg
 
 url: "https://rockyyh.github.io"
 
 plugins:
   - jekyll-seo-tag
   - jekyll-remote-theme
+  - jemoji
+  - jekyll-sitemap
 
 remote_theme: vaibhavvikas/jekyll-theme-minimalistic
+
+platforms:
+  - name: GitHub
+    icon: <i class="fa-brands fa-github"></i>
+    link: https://github.com/rockyyh
+
+navigation:
+  - name: Home
+    link: /
+  - name: Blog
+    link: /blog.html
