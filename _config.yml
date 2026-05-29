@@ -4,7 +4,7 @@ title: Yinghao Yang
 email: yangyinghao@berkeley.edu
 favicon: true
 color-scheme: auto
-description: Undergraduate @ Westlake University
+description: Undergraduate@Westlake University
 logo: /assets/img/me.jpg
 
 url: "https://rockyyh.github.io"
@@ -14,6 +14,7 @@ plugins:
   - jekyll-remote-theme
   - jemoji
   - jekyll-sitemap
+  - jekyll-scholar
 
 remote_theme: vaibhavvikas/jekyll-theme-minimalistic
 
@@ -27,3 +28,11 @@ navigation:
     link: /
   - name: Blog
     link: /blog.html
+
+scholar:
+  locale: "en-US"
+  style: "ieee"    # 选择引用样式，如 APA, ieee, chicago 等
+  canonical: false
+  schema: false
+  sort: "year"    # 按年份排序
+  reverse: true    # 倒序显示
