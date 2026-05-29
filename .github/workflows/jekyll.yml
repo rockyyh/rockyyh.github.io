@@ -25,12 +25,14 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir -p dist
-          cp -R assets dist/assets
-          cp index.html dist/index.html
-          cp Blog.html dist/Blog.html
-          cp blog.html dist/blog.html
-          cp robots.txt dist/robots.txt
-          cp sitemap.xml dist/sitemap.xml
+          if [ -d assets ]; then
+            cp -R assets dist/assets
+          fi
+          for file in index.html Blog.html blog.html robots.txt sitemap.xml; do
+            if [ -f "$file" ]; then
+              cp "$file" "dist/$file"
+            fi
+          done
           touch dist/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
