@@ -26,8 +26,6 @@ platforms:
 navigation:
   - name: Home
     link: /
-  - name: Blog
-    link: /blog.html
 
 scholar:
   locale: "en-US"
