@@ -16,7 +16,7 @@ College: Gamma College
 
 ## Publication
 
-{% bibliography --file assets/bib/publications.bib --type article,inproceedings %}
+{% bibliography --file references %}
 
 ## Awards
 
